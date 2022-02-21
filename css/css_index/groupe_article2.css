@@ -1,0 +1,100 @@
+.image-transition{
+    height: 200px;
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 center;
+    background-image: url("../../image/transtion.jpg");
+}
+.groupArticle2{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 7%;
+    padding-right: 7%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background-color: #1e1e1e;
+}
+.groupArticle2 article{
+    background-color: #131313;
+
+    max-width: 30%;
+
+    text-align: center;
+    
+    padding: 2%;
+    margin: 10px;
+    
+}
+.groupArticle2 article:hover{
+    transform: scale(1.07); 
+}
+.groupArticle2 article:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.groupArticle2 article:nth-child(2){
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.groupArticle2 article:nth-child(3){
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.groupArticle2 article:last-child{
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}       
+li{
+    margin-bottom: 5px;
+    font-size: 1em;
+}
+.groupArticle2 p{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.titre{
+    text-align: left;
+    font-size: 1em;
+}
+ul ul li{
+    list-style-type: none;
+}
+.groupArticle2 article>h3{
+    font-size: 1em;
+}
+
+/*-------------------------------------------------article FUTUR---------------------------------------------------*/
+article.futur h4{
+    padding: 10px;
+}
+.groupArticle2 h5{
+    text-align: left;
+    padding-bottom: 2%;
+}
+/*----------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 900px) {
+    .groupArticle2{
+        flex-direction: column;
+    }
+    .groupArticle2 article:nth-child(n){
+        margin: 0%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        
+        max-width: 70%;
+    }
+    li{
+        list-style-type: none;
+    }
+}

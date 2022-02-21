@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Accueil</title>
+	<link rel="stylesheet" type="text/css" href="css/css_index/toparticle.css">
+	<link rel="stylesheet" type="text/css" href="css/css_general/all.css">
+	<link rel="stylesheet" type="text/css" href="css/css_index/groupe_article2.css">
+
+	<script src="js/webcomponant/footer.js" defer></script>
+
+	<script src="https://kit.fontawesome.com/4c9a69a913.js" crossorigin="anonymous"></script>
+	<script src="js/navbar.js"></script>
+
+</head>
+
+<body>
+	<header>
+		<dialog id="mydialog">
+			<div class="menumodal">
+				<a class="page-ouverte" href="index.html">Accueil</a>
+				<a href="Evenement.html">Evenement</a>
+				<a href="details.html">Plus de détails</a>
+				<a href="questionnaire.html">Nous contacter</a>
+				<button class="close" id="hide">
+					<i class="fas fa-times"></i>
+				</button>
+			</div>
+		</dialog>
+
+		<dialog id="mydialog2">
+			<div class="searchbar" role="search">
+				<input type="text" id="search" name="search" required minlength="1" maxlength="20">
+				<button class="close" id="hide2">
+					<i class="fas fa-times"></i>
+				</button>
+			</div>
+		</dialog>
+
+		<nav id="nav" class="isTop">
+			<div class="cote-G">
+				<img class="logo" src="image/logo_iut_fondnoir2.png" alt="Batiment de l'iut">
+				<p>L'excellence technologique</p>
+			</div>
+			<div class="cote-D">
+				<button class="notification">
+					<i class="fas fa-bell"></i>
+				</button>
+				<div class="recherche">
+					<button id="show2">
+						<i class="fas fa-search"></i>
+						Recherche
+					</button>
+				</div>
+				<div class="menu">
+					<button id="show">
+						<i class="fas fa-bars"></i>
+						Menu
+					</button>
+				</div>
+			</div>
+		</nav>
+		<div class="article_main">
+			<article class="mainArt">
+				<h1>Vous cherchez des informations sur le BUT informatique à la Doua ?</h1>
+				<h2>Vous êtes au bon endroit ! <i class="far fa-arrow-alt-circle-right"></i></h2>
+			</article>
+		</div>
+	</header>
+	<section class="Top_article">
+
+		<article class="article_1">
+
+			<div class="image-zoom">
+				<img src="image/BUT.jpg" class="BUT" alt="logo BUT">
+			</div>
+
+			<h3>Le BUT c'est quoi ?</h3>
+			<h4>Le BUT qui signifie Bachelor Universitaire de Technologie et remplace
+				depuis la rentrée 2021 la formation nommée DUT Diplome Universitaire
+				de Technologie. C'est une formation qui se réalise en trois ans en IUT
+				(Institut Universitaire de Technologie), et qui permet une spécialisation
+				au troisième semestre dans un des domaines que comprends la formation.
+				Et c'est en troisième année que la formation s'effectue ogligatoirement
+				en alternance. Cette formation délivre un diplome équivalent à la licence
+				tout en proposant plus de pratique. Il existe 24 types de cette formation, dont le BUT Informatique!
+			</h4>
+			<a class="icone"
+				href="https://www.onisep.fr/Choisir-mes-etudes/Apres-le-bac/Organisation-des-etudes-superieures/Les-BUT-bachelors-universitaires-de-technologie"
+				target="_blank">
+				<i class="fas fa-arrow-circle-right"></i>
+				<p>Voir plus</p>
+			</a>
+		</article>
+
+		<article class="article_2">
+			<div class="image-zoom"><img src="image/BUT_info.jpg" class="BUT" alt="logo BUT info"></div>
+			<h3>Le BUT informatique c'est quoi ?</h3>
+			<h4>Cette formation prépare aux métiers du numérique et est composé à la
+				fois de cours pratique et théorique. De plus elle vise à acquerir des
+				compétences sur de nombreux sujets comme le réseaux ou les langages de
+				programmation ...
+			</h4>
+			<h5>Au troisième semestre cette formation propose quatre parcours :</h5>
+			<ul>
+				<li>parcours réalisation d'applications : conception, développement, validation</li>
+				<li>parcours administration, gestion et exploitation des données</li>
+				<li>parcours déploiement, intégration d'applications et management du système d'information</li>
+				<li>parcours déploiement d'applications communicantes et sécurisées</li>
+			</ul>
+			<a class="icone"
+				href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/but-informatique"
+				target="_blank">
+				<i class="fas fa-arrow-circle-right"></i>
+				<p>Voir plus</p>
+			</a>
+		</article>
+
+		<article class="article_3">
+			<div class="image-zoom"><img src="image/iutface.jpg" class="BUT" alt="Acceuil de l'IUT feyssine"></div>
+			<h3>L'IUT informatique à la Doua</h3>
+			<h4>La doua propose trois des quatre parcours de la formation : </h4>
+			<ul>
+				<li>parcours réalisation d'applications : conception, développement, validation</li>
+				<li>parcours administration, gestion et exploitation des données</li>
+				<li>parcours déploiement d'applications communicantes et sécurisées</li>
+			</ul>
+		</article>
+	</section>
+	<div class="image-transition"></div>
+	<section class="groupArticle2">
+		<article>
+			<h3>Es-tu fait pour le BUT informatique ?</h3>
+			<p>Cette formation s'adresse plus particulièrement aux Bachelier.e.s sortant d'une formation :</p>
+			<ul>
+				<li class="titre">Général :
+					<ul>
+						<li>Spécialité Mathématiques / Science de L'ingénieur / Physique</li>
+					</ul>
+				<li class="titre">Technologique :
+					<ul>
+						<li>STI2D</li>
+					</ul>
+				<li class="titre">Réorientation :
+					<ul>
+						<li>L1 / CPGE / Medecine / STAPS / ...</li>
+					</ul>
+			</ul>
+		</article>
+		<article>
+			<h3>Compétence acquise durant la formation</h3>
+			<ul>
+				<li>Cette formation à comme objectif de lier la théorie et la pratique, grâce à la réalisation de
+					nombreux TD.</li>
+				<li>Le BUT informatique permet donc de former des proffessionel sur un large panel de compétences
+					techniques.</li>
+				<li>De plus la partie communication de la formation permet de développer les rapports de travail avec
+					les utilisateurs de l'informatiques et les titulaires d'autres postes.</li>
+				<li>Enfin la formation met en avant l'esprit de groupe.</li>
+			</ul>
+		</article>
+		<article class="futur">
+			<h3>Et plus tard ?</h3>
+			<h4>Cette formation permet plusieurs poursuites d'études ... (86% des diplomés)</h4>
+			<ul>
+				<li>Dans un premier temps il vous seras possible de continuer vers un master une informatique (2ans).
+				</li>
+				<li>Il est aussi possible d'arreter l'IUT au bout de seulement deux ans et donc de ne pas avoir le
+					diplome du BUT mais seulement du DUT et d'intégrer une école d'ingénieur.</li>
+			</ul>
+			<h4>... mais facilite aussi l'insertion professionnel ! (14% des diplomés)</h4>
+			<h5> Voici quelques exemples de métiers :</h5>
+			<ul>
+				<li>Développeur/euse d'applications</li>
+				<li> Administrateur/rice systèmes ou réseaux</li>
+				<li>Intégrateur Web</li>
+				<li>Testeur en informatique</li>
+			</ul>
+		</article>
+		<article>
+			<h3>Le choix de la spécialité !</h3>
+			<p>Ce choix se prépare durant la première année et
+				il est à effectuer en début de seconde année.
+				En effet au S3 (semestre 3) un choix devrait
+				être fait entre filière B et filière A, C.
+				Puis pour ceux ayant choisi A et C, il devrons
+				faire un second choix afin de s’orienter vers
+				l’un des deux.</p>
+			<h4>Pourquoi le parcours B est-il à choisir avant ?</h4>
+			<p>Le choix du parcours B est effectué plus tôt car
+				c’est la seule formation que l’iut propose en
+				alternance pour la seconde et la troisième année.
+				Contrairement au parcours A et C qui s'effectue en
+				alternance seulement à partir de la troisième année.
+			</p>
+		</article>
+	</section>
+
+	<my-footer></my-footer>
+
+	<script>
+		(function () {
+			var dialog = document.getElementById('mydialog');
+			document.getElementById('show').onclick = function () {
+				dialog.show();
+			};
+			document.getElementById('hide').onclick = function () {
+				dialog.close();
+			};
+		})();
+		(function () {
+			var dialog = document.getElementById('mydialog2');
+			document.getElementById('show2').onclick = function () {
+				dialog.show();
+			};
+			document.getElementById('hide2').onclick = function () {
+				dialog.close();
+			};
+		})();
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Nous contacter</title>
+	<link rel="stylesheet" type="text/css" href="css/css_general/all.css">
+	<link rel="stylesheet" type="text/css" href="css/cssformulaire.css">
+
+	<script src="js/webcomponant/footer.js" defer></script>
+
+	<script src="https://kit.fontawesome.com/4c9a69a913.js" crossorigin="anonymous"></script>
+	<script src="js/navbar.js"></script>
+</head>
+
+<body>
+	<header>
+		<dialog id="mydialog">
+			<div class="menumodal">
+				<a href="index.html">Accueil</a>
+				<a href="Evenement.html">Evenement</a>
+				<a href="details.html">Plus de détails</a>
+				<a class="page-ouverte" href="questionnaire.html">Nous contacter</a>
+				<button class="close" id="hide">
+					<i class="fas fa-times"></i>
+				</button>
+			</div>
+		</dialog>
+
+		<dialog id="mydialog2">
+			<div class="searchbar">
+				<input type="text" id="search" name="search" required minlength="1" maxlength="20">
+				<button class="close" id="hide2">
+					<i class="fas fa-times"></i>
+				</button>
+			</div>
+		</dialog>
+
+		<nav id="nav" class="isTop">
+			<div class="cote-G">
+				<img class="logo" src="image/logo_iut_fondnoir2.png" alt="Batiment de l'iut">
+				<p>L'excellence technologique</p>
+			</div>
+			<div class="cote-D">
+				<button class="notification">
+					<i class="fas fa-bell"></i>
+				</button>
+				<div class="recherche">
+					<button id="show2">
+						<i class="fas fa-search"></i>
+						Recherche
+					</button>
+				</div>
+				<div class="menu">
+					<button id="show">
+						<i class="fas fa-bars"></i>
+						Menu
+					</button>
+				</div>
+			</div>
+		</nav>
+		<div class="article_main">
+			<article class="mainArt">
+				<h1>Vous avez des questions on y répond !</h1>
+			</article>
+		</div>
+	</header>
+
+	<section class="section_apropos">
+		<form action="index.html" method="post" autocomplete="on">
+			<div class="role">
+				<h2>Qui êtes-vous ?</h2>
+				<div>
+					<input type="radio" id="etudiant" name="role" value="etudiant">
+					<label for="etudiant">Etudiant</label>
+				</div>
+				<div>
+					<input type="radio" id="professionnel" name="role" value="professionnel">
+					<label for="professionnel">Professionnel</label>
+				</div>
+				<div>
+					<input type="radio" id="professeur" name="role" value="professeur">
+					<label for="professeur">Enseignant</label>
+				</div>
+				<div>
+					<input type="radio" id="autre" name="role" value="autre">
+					<label for="autre">Autre</label>
+				</div>
+			</div>
+			<div class="mail">
+				<label for="mail"><i class="fas fa-at"></i></label>
+				<input type="text" id="mail" name="mail">
+			</div>
+			<div class="message">
+				<h2>Votre Message :</h2>
+				<input type="text" id="message" name="message">
+			</div>
+			<div class="button">
+				<button type="submit">Envoyer</button>
+			</div>
+
+		</form>
+	</section>
+
+	<my-footer></my-footer>
+
+	<script>
+		(function () {
+			var dialog = document.getElementById('mydialog');
+			document.getElementById('show').onclick = function () {
+				dialog.show();
+			};
+			document.getElementById('hide').onclick = function () {
+				dialog.close();
+			};
+		})();
+		(function () {
+			var dialog = document.getElementById('mydialog2');
+			document.getElementById('show2').onclick = function () {
+				dialog.show();
+			};
+			document.getElementById('hide2').onclick = function () {
+				dialog.close();
+			};
+		})();
+	</script>
+</body>
+
+</html>

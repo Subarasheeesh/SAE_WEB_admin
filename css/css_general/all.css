@@ -1,0 +1,326 @@
+*{
+	margin: 0;
+	padding: 0;
+
+	font-family: arial;
+	color: white;
+}
+body{
+	width: 100%;
+	background-color: #0e0e0e;
+}
+h1{
+	font-family: serif;
+	font-size: 2em;
+}
+h2{
+	font-size: 1.7em;
+	font-family: serif;
+}
+h4{
+	font-size: 0.9em;
+}
+li{
+	font-family: serif;
+}
+
+/*-----------------------------------------------------header------------------------------------------------------*/
+header{
+	background-image:linear-gradient(0deg, rgba(14,14,14,1) 0%, rgba(14,14,14,1) 0%, rgba(14,14,14,0.35057773109243695) 70%),url("../../image/image_presentation.jpg");
+	background-size: cover;
+	
+	height: 100vh;
+	
+	display: flex;
+	justify-content: center;
+}
+.page-ouverte{
+	color: rgb(95, 95, 95);
+}
+
+button.notification{
+	visibility: hidden;
+	cursor: pointer;
+}
+
+#nav{
+	position: fixed;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	width: 100%;
+
+	transition: 0.3s;
+	transition: top 0.1s;
+
+	background-color: rgba(0, 0, 0, 0.377);
+	
+	z-index: 1;
+}
+
+#nav.isTop{
+	background-color: rgba(255, 255, 255, 0);
+	transition: 0.3s;
+}
+.cote-G{
+	padding-left: 3px;
+}
+.cote-D, .cote-G{
+	display: flex;
+}
+button div{
+	font-size: 1em;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button{
+	border: none;
+	align-items: center;
+	cursor: pointer;
+	background-color: black;
+
+	width:  200px;
+	height: 75px;
+}
+nav i{
+	margin-right: 10px;
+}
+.recherche button{
+	border-bottom-left-radius: 10px;
+}
+img.logo{
+	width: 200px;
+}
+nav p{
+	margin-left: 50px;
+
+	display: flex;
+	align-items: center;
+}
+button:hover{
+	background-color: rgb(49, 49, 49);
+}
+/*--------------------------------------------------article header-----------------------------------------------*/
+.article_main{
+	display :flex;
+	flex-direction: column;
+	text-align: center;
+
+	width: 100%;
+}
+.mainArt{
+	margin: auto;
+	width: 50%;
+}
+.mainArt h2{
+	text-align: right;
+	margin-top: 7%;
+}
+
+/* vvvvvvvvvvv fenetre recherche modal vvvvvvvvvvv */
+
+.searchbar {
+	display: flex;
+
+	position: fixed;
+	right: 200px;
+	top: 0px;
+	z-index: 2;
+
+	width:  500px;
+	height: 75px;
+	
+	animation: opacity 0.5s ease;
+	
+	outline: oldlace;
+}
+
+.searchbar input {
+	background-color: black;
+	border: none;
+
+	padding-left: 20px;
+	width: 300px;
+
+	font-size: 1em;
+	border-bottom-left-radius: 10px;
+}
+
+/* vvvvvvvvvvv fenetre menu modal vvvvvvvvvvv */
+
+.menumodal{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+	
+	background-color: #0e0e0e;
+
+	width: 100%;
+	height: 100%;
+	padding-left: 10%;
+
+	animation: movingTopToBottom 1s ease;
+	
+}
+
+
+ .menumodal button {
+	position: absolute;
+	top: 5%; right: 12%;
+	
+	font-size: 4em;
+
+	background-color: transparent;
+}
+
+.menumodal button > i {
+	-webkit-transition: -webkit-transform .8s ease-in-out;
+			transition:         transform .8s ease-in-out;
+  }
+.menumodal button > i:hover {
+	-webkit-transform: rotate(360deg);
+			transform: rotate(360deg);
+}
+
+.menumodal a {
+	font-size: 30px;
+	animation: opacity 1s ease-in;
+	max-width: fit-content;
+	text-decoration: none;
+}
+
+.menumodal a:after {
+  content: '';
+  display: block;
+
+  margin: auto;
+  height: 3px;
+  width: 0;
+
+  background: transparent;
+
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.menumodal a:hover:after {
+  width: 100%;
+  background: white;
+}
+/*--------------------------footer------------------------------------*/
+footer{
+	padding-top: 40px;
+	padding: 20px;
+
+	display: flex;
+	justify-content: space-between;
+
+	background-color: #0e0e0e;
+}
+footer div a{
+	padding: 3px;
+}
+
+footer div:first-child, footer div:last-child{
+	display: flex;
+	flex-direction: column-reverse;
+
+	text-align: center;
+}
+footer h3{
+	font-size: 3em;
+
+	padding-top: 10%;
+	padding-bottom: 9%;
+
+	text-align: center;
+}
+footer p{
+	font-size: 1.1em;
+}
+footer h3 + p{
+	font-size: 1.9em;
+	text-align: center;
+}
+/* vvvvvvvvvvv animation keyframes vvvvvvvvvvv */
+
+@keyframes movingTopToBottom {
+	0% {
+	  top: -100%;
+	}
+	100% {
+	  top: 0%;
+	}
+}
+
+@keyframes opacity {
+	0% {
+		opacity: 0%;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+
+
+/* --------------------media----------------------*/
+
+@media screen and (max-width: 900px) {
+	button{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		
+		background-color: transparent;
+
+		width:  80px;
+		height: 10px;
+		padding: 20px;
+	}
+	button:hover{
+		background-color: transparent;
+	}
+	nav p{
+		display: none;
+	}
+	button.notification{
+		border: none;
+		
+		display: flex;
+		justify-content: right;
+		
+		background-color: transparent;
+		visibility: visible;
+
+		width:  0px;
+		height: 0px;
+		padding: 20px;
+	}
+	/*---------------------top article-----------------------*/
+	.Top_article
+	{
+		flex-direction: column;
+		align-items: center;
+	}
+	 .Top_article article
+	{
+		max-width: 80%;
+		margin-bottom: 10px;
+	}
+	/*------------------footer------------------------*/
+	footer h3{
+		font-size: 1.8em;
+	}
+	footer p{
+		font-size: 0.9em;
+	}
+	footer h3 + p{
+		font-size: 1em;
+	}
+}
